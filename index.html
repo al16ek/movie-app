@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MovieApp</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="container">
+      <div class="header__content">
+        <a href="#" class="header__logo">MovieApp</a>
+        <form action="">
+          <input type="text" class="header__search" placeholder="Поиск" />
+        </form>
+      </div>
+    </header>
+    <div class="container">
+      <div class="movies-list">
+        <div class="movies-item">
+          <div
+            data-url="https://kinopoiskapiunofficial.tech/api/v2.2/films/top?type=TOP_100_POPULAR_FILMS&page="
+            class="top-100-popular"
+          >
+            ТОП 100 ПОПУЛЯРНЫХ ФИЛЬМОВ
+          </div>
+        </div>
+        <div
+          data-url="https://kinopoiskapiunofficial.tech/api/v2.2/films/top?type=TOP_250_BEST_FILMS&page="
+          class="movies-item"
+        >
+          <div class="top-250-best">ТОП 250 ЛУЧШИХ ФИЛЬМОВ</div>
+        </div>
+      </div>
+      <div class="movies"></div>
+    </div>
+    <div class="pagination">
+      <button class="pagination__prev">Предыдущий</button>
+      <button class="pagination__next">Следующий</button>
+    </div>
+    <script src="/js/app.js"></script>
+    <script src="/js/modal.js"></script>
+  </body>
+</html>
